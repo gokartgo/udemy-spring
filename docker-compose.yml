@@ -1,0 +1,11 @@
+version: '3.1'  # if no version is specified then v1 is assumed. Recommend v2 minimum
+
+services:  # containers. same as docker run
+  tomcat: # a friendly name. this is also DNS name inside network
+    image: tomcat:9.0.52-jdk8
+    ports:
+      - '8080:8080'
+
+
+
+
