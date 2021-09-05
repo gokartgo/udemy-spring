@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
     // use auto wired in dependency injection
     @Autowired
-    @Qualifier("RESTFortuneService")
+    @Qualifier("fileFortuneService")
     private FortuneService fortuneService;
     // define a default constructor
     public TennisCoach() {
