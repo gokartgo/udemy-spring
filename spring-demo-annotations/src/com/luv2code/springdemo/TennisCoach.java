@@ -14,7 +14,7 @@ import javax.annotation.PreDestroy;
 public class TennisCoach implements Coach {
     // use auto wired in dependency injection
     @Autowired
-    @Qualifier("fileFortuneService")
+    @Qualifier("fileFortuneService") // qualifier use for select from multi dependency
     private FortuneService fortuneService;
     // define a default constructor
     public TennisCoach() {
