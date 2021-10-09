@@ -1,2 +1,6 @@
 lib
 out
+.gradle
+.idea
+build
+gradle

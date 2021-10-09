@@ -1,0 +1,21 @@
+apply plugin:'java'
+apply plugin:'war'
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+//war {
+//    webXml = file('src/main/webapp/web.xml')
+//}
+
+dependencies {
+    implementation fileTree(dir: 'src/main/webapp/WEB-INF/lib', include: '*.jar')
+}
+
+/* Change context path (base url). otherwise defaults to name of project */
