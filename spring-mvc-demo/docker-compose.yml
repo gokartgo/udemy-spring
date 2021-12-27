@@ -9,3 +9,6 @@ services:  # containers. same as docker run
     environment:
       JPDA_ADDRESS: 8000
       JPDA_TRANSPORT: dt_socket
+    volumes:
+      - ./build/libs/:/usr/local/tomcat/webapps
+    
